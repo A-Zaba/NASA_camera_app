@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for i in result %}
+
+    <a href="{{ i }}"><img src="{{ i }}" alt="mars.jpl.nasa.gov/" style="height:200px;width:200px"></a>
+
+    {% endfor %}
+    <br><br>
+
+    <a href="{{url_for('search')}}">Change Camera</a>
+</body>
+</html>
